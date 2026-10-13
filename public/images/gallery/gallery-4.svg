@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <defs>
+    <linearGradient id="gal_Quad Seal Industrial Pouches" x1="0" y1="0" x2="600" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#18253E"/>
+      <stop offset="100%" stop-color="#162238"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#gal_Quad Seal Industrial Pouches)"/>
+  
+  <!-- Subtle Packaging Geometry -->
+  <g stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2">
+    <rect x="80" y="60" width="440" height="280" rx="8"/>
+    <line x1="80" y1="120" x2="520" y2="120"/>
+    <line x1="300" y1="120" x2="300" y2="340"/>
+  </g>
+
+  <!-- Pouch graphic representation -->
+  <g transform="translate(240, 110)">
+    <rect width="120" height="170" rx="4" fill="#FFFFFF" fill-opacity="0.1" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.3"/>
+    <rect width="120" height="18" fill="#E06D28" fill-opacity="0.8"/>
+  </g>
+
+  <!-- Title & Subtitle in tile -->
+  <text x="40" y="385" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Quad Seal Industrial Pouches</text>
+  <text x="40" y="412" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Corner reinforced stability</text>
+</svg>

@@ -1,0 +1,390 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   Desktop: 1920px, 1440px, 1366px
+   Tablet: 1024px, 768px
+   Mobile: 430px, 390px, 375px
+   ========================================================================== */
+
+/* Large Screens */
+@media (min-width: 1440px) {
+  .hero-headline {
+    font-size: 3.75rem;
+  }
+}
+
+/* Tablet & Smaller Desktops (<= 1024px) */
+@media (max-width: 1024px) {
+  .section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .nav-menu {
+    gap: 18px;
+  }
+
+  .hero-headline {
+    font-size: 2.75rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-visual-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trust-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .trust-item:nth-child(3),
+  .trust-item:nth-child(4) {
+    border-top: 1px solid var(--border);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-image-wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .industry-card {
+    height: 380px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .why-visual-wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+    order: 2;
+  }
+
+  .why-content {
+    order: 1;
+  }
+
+  .process-timeline {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+
+  .process-step-node {
+    width: 52px;
+    height: 52px;
+  }
+
+  .process-step-title {
+    font-size: 0.9375rem;
+  }
+
+  .process-step-desc {
+    font-size: 0.75rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners-grid > :nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 200px;
+  }
+
+  .gallery-item:nth-child(1) {
+    grid-column: span 6;
+    grid-row: span 2;
+  }
+
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(3) {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+
+  .gallery-item:nth-child(4),
+  .gallery-item:nth-child(5),
+  .gallery-item:nth-child(6) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .hero-collage {
+    grid-template-columns: 1fr 1fr;
+    min-height: 280px;
+  }
+
+  .hero-collage-primary,
+  .hero-collage-secondary {
+    min-height: 240px;
+  }
+
+  .gallery-item:nth-child(7),
+  .gallery-item:nth-child(8) {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+/* Tablet Portrait & Mobile Transition (<= 768px) */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 68px;
+    --topbar-height: 34px;
+  }
+
+  .top-bar-announcement {
+    font-size: 0.75rem;
+  }
+
+  .top-bar-actions {
+    display: none;
+  }
+
+  .nav-menu,
+  .btn-nav-quote {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .mobile-drawer {
+    display: block;
+  }
+
+  .hero-section {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+
+  .hero-headline {
+    font-size: 2.25rem;
+    line-height: 1.15;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+
+  .hero-collage {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-collage-secondary {
+    min-height: 220px;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-floating-stat {
+    left: 10px;
+    bottom: -15px;
+    padding: 10px 14px;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-item {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border);
+    padding: 20px 16px;
+  }
+
+  .trust-item:last-child {
+    border-bottom: none;
+  }
+
+  .about-heading,
+  .section-header h2,
+  .final-cta-heading {
+    font-size: 1.875rem;
+  }
+
+  .about-floating-badge {
+    right: 10px;
+    bottom: -15px;
+    padding: 12px 14px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-card {
+    min-height: 360px;
+  }
+
+  /* Process changes from horizontal to vertical timeline */
+  .process-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 28px;
+    margin-top: 24px;
+  }
+
+  .process-timeline-line {
+    top: 20px;
+    bottom: 20px;
+    left: 48px;
+    right: auto;
+    width: 2px;
+    height: auto;
+    background: linear-gradient(
+      180deg,
+      var(--accent) 0%,
+      var(--accent-blue) 50%,
+      var(--accent) 100%
+    );
+  }
+
+  .process-step {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .process-step-node {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .process-step-desc {
+    max-width: 100%;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partners-grid > :nth-child(5) {
+    grid-column: span 1;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px;
+  }
+
+  .gallery-item:nth-child(n) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  /* Hide desktop floating whatsapp and show mobile bottom bar */
+  .floating-whatsapp-desktop {
+    display: none;
+  }
+
+  .mobile-bottom-bar {
+    display: block;
+  }
+
+  /* Add bottom padding to body so bottom bar does not overlap content */
+  body {
+    padding-bottom: 64px;
+  }
+}
+
+/* Small Mobile Screens (430px, 390px, 375px) */
+@media (max-width: 430px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .hero-headline {
+    font-size: 1.875rem;
+  }
+
+  .hero-description {
+    font-size: 0.9375rem;
+  }
+
+  .brand-title {
+    font-size: 1.0625rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.625rem;
+  }
+
+  .final-cta-heading {
+    font-size: 1.625rem;
+  }
+
+  .final-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .final-cta-buttons .btn {
+    width: 100%;
+  }
+
+  .modal-window {
+    max-height: 95vh;
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 16px 20px;
+  }
+}

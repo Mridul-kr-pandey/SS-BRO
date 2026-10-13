@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" fill="none">
+  <defs>
+    <linearGradient id="nutraBackdrop" x1="0" y1="0" x2="600" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0E2338"/>
+      <stop offset="50%" stop-color="#0A1826"/>
+      <stop offset="100%" stop-color="#060E17"/>
+    </linearGradient>
+
+    <linearGradient id="nutraPouchGrad" x1="180" y1="70" x2="420" y2="410" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E324A"/>
+      <stop offset="35%" stop-color="#142334"/>
+      <stop offset="70%" stop-color="#0D1722"/>
+      <stop offset="100%" stop-color="#080F16"/>
+    </linearGradient>
+
+    <linearGradient id="goldSheen" x1="190" y1="70" x2="380" y2="410" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#FBBF24" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="nutraGoldBar" x1="180" y1="50" x2="420" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="80%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <radialGradient id="nutraShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#060E17" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#060E17" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="480" fill="url(#nutraBackdrop)"/>
+
+  <!-- Molecular Ring Geometry in background -->
+  <g stroke="#38BDF8" stroke-opacity="0.1" stroke-width="1.2">
+    <polygon points="480,100 520,123 520,169 480,192 440,169 440,123"/>
+    <polygon points="520,169 560,192 560,238 520,261 480,238 480,192"/>
+    <polygon points="440,169 480,192 480,238 440,261 400,238 400,192"/>
+  </g>
+
+  <!-- Ambient Shadow -->
+  <ellipse cx="300" cy="430" rx="190" ry="22" fill="url(#nutraShadow)"/>
+
+  <!-- Nutraceutical Barrier Pouch Assembly -->
+  <g id="nutra-pouch-assembly">
+    <!-- Main Stand-Up Body -->
+    <path d="M190 75 L410 75 L435 395 C435 415, 395 425, 300 425 C205 425, 165 415, 165 395 Z" fill="url(#nutraPouchGrad)"/>
+    
+    <!-- Gold Metallic Light Sheen -->
+    <path d="M195 78 L280 76 L250 420 L180 405 Z" fill="url(#goldSheen)"/>
+
+    <!-- Top Metallic Header with Tear Notch -->
+    <path d="M188 54 L412 54 L410 75 L190 75 Z" fill="url(#nutraGoldBar)"/>
+    <ellipse cx="300" cy="65" rx="7" ry="4" fill="#0B1528"/>
+    <polygon points="188,62 196,65 188,68" fill="#0B1528"/>
+    <polygon points="412,62 404,65 412,68" fill="#0B1528"/>
+
+    <!-- Zipper Line -->
+    <line x1="195" y1="88" x2="405" y2="88" stroke="#FDBA74" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.6"/>
+
+    <!-- Front Product Art (Supplement Nutrition Blend) -->
+    <g transform="translate(215, 135)">
+      <rect width="170" height="175" rx="8" fill="#070F1A" stroke="#F59E0B" stroke-width="1.2"/>
+      
+      <!-- Protein / Supplement Crest -->
+      <polygon points="85,25 115,40 115,75 85,95 55,75 55,40" fill="#152336" stroke="#F59E0B" stroke-width="1.5"/>
+      <path d="M73 52 L83 62 L97 45" stroke="#FCD34D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <text x="85" y="118" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing="0.08em">WHEY &amp; PEPTIDES</text>
+      <text x="85" y="134" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="9" font-weight="600" text-anchor="middle">HIGH-BARRIER FRESHNESS</text>
+      
+      <!-- Quality Guarantee Pill -->
+      <rect x="25" y="146" width="120" height="18" rx="4" fill="#152338" stroke="#38BDF8" stroke-width="0.8"/>
+      <text x="85" y="158" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="8" font-weight="700" text-anchor="middle" letter-spacing="0.06em">MULTI-LAYER FOIL OTR/WVTR</text>
+    </g>
+  </g>
+
+  <!-- Technical Spec Callout Badge -->
+  <g transform="translate(36, 36)">
+    <rect width="180" height="44" rx="6" fill="#071322" stroke="#F59E0B" stroke-width="1.2"/>
+    <circle cx="22" cy="22" r="5" fill="#F59E0B"/>
+    <text x="36" y="19" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="11" font-weight="700">NUTRACEUTICAL PACKAGING</text>
+    <text x="36" y="32" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="9.5">Vitamins, Whey &amp; Dietary Blends</text>
+  </g>
+</svg>

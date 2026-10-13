@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" fill="none">
+  <defs>
+    <!-- Soft Studio Floor Shadow -->
+    <radialGradient id="studioShadow3D" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#070D18" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#070D18" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Metallic Charcoal Front Face Gradient -->
+    <linearGradient id="frontFaceGrad" x1="200" y1="90" x2="380" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#223249"/>
+      <stop offset="25%" stop-color="#182638"/>
+      <stop offset="70%" stop-color="#0F1A29"/>
+      <stop offset="100%" stop-color="#0A121D"/>
+    </linearGradient>
+
+    <!-- Front Face Specular Sheen (Curved Pouch Reflection) -->
+    <linearGradient id="specularSheen" x1="240" y1="90" x2="330" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="70%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Left 3D Gusset Side Panel Gradient -->
+    <linearGradient id="leftGussetGrad" x1="140" y1="120" x2="210" y2="390" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#121D2C"/>
+      <stop offset="50%" stop-color="#0D1622"/>
+      <stop offset="100%" stop-color="#080E17"/>
+    </linearGradient>
+
+    <!-- Right 3D Gusset Side Panel Gradient -->
+    <linearGradient id="rightGussetGrad" x1="390" y1="120" x2="450" y2="390" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D415D"/>
+      <stop offset="40%" stop-color="#1E2F46"/>
+      <stop offset="100%" stop-color="#121D2C"/>
+    </linearGradient>
+
+    <!-- Flat Bottom Base Shadow / Crease Gradient -->
+    <linearGradient id="baseShadowGrad" x1="160" y1="390" x2="440" y2="425" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#05090F"/>
+      <stop offset="50%" stop-color="#0B131E"/>
+      <stop offset="100%" stop-color="#05090F"/>
+    </linearGradient>
+
+    <!-- Top Pocket Zipper Header Gradient -->
+    <linearGradient id="topZipperGrad" x1="200" y1="65" x2="400" y2="105" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C2410C"/>
+      <stop offset="40%" stop-color="#EA580C"/>
+      <stop offset="80%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+
+    <!-- Foil Amber Accent Strip Gradient -->
+    <linearGradient id="amberFoilGrad" x1="210" y1="180" x2="390" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <!-- Studio Background Subtle Vignette -->
+    <linearGradient id="cardBg3D" x1="0" y1="0" x2="600" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="60%" stop-color="#EDF2F7"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Studio Backdrop -->
+  <rect width="600" height="480" fill="url(#cardBg3D)"/>
+  
+  <!-- Subtle Technical Grid Lines in background -->
+  <g stroke="#CBD5E1" stroke-width="0.8" opacity="0.45">
+    <line x1="60" y1="100" x2="540" y2="100"/>
+    <line x1="60" y1="200" x2="540" y2="200"/>
+    <line x1="60" y1="300" x2="540" y2="300"/>
+    <line x1="60" y1="400" x2="540" y2="400"/>
+    <line x1="160" y1="40" x2="160" y2="440"/>
+    <line x1="300" y1="40" x2="300" y2="440"/>
+    <line x1="440" y1="40" x2="440" y2="440"/>
+  </g>
+
+  <!-- Ground Ambient Contact Shadow -->
+  <ellipse cx="300" cy="426" rx="200" ry="24" fill="url(#studioShadow3D)"/>
+  <ellipse cx="300" cy="420" rx="140" ry="12" fill="#000000" opacity="0.3"/>
+
+  <!-- ================= 3D BOX POUCH STRUCTURE ================= -->
+  <g id="box-pouch-assembly">
+
+    <!-- 1. FLAT BOTTOM BASE (Box Pouch Signature Feature) -->
+    <!-- The flat bottom extends outward giving 3D stability -->
+    <polygon points="170,410 430,410 405,426 195,426" fill="url(#baseShadowGrad)"/>
+    <polygon points="195,426 405,426 395,432 205,432" fill="#03060A"/>
+
+    <!-- 2. LEFT SIDE GUSSET PANEL (Folded Pleat in 3D Perspective) -->
+    <polygon points="160,105 210,88 210,408 170,410" fill="url(#leftGussetGrad)"/>
+    <!-- Left Gusset Inward Crease Line -->
+    <line x1="185" y1="98" x2="190" y2="410" stroke="#060A10" stroke-width="2" opacity="0.8"/>
+    <!-- Left Edge Highlight -->
+    <line x1="160" y1="105" x2="170" y2="410" stroke="#334760" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- 3. RIGHT SIDE GUSSET PANEL (Illuminated 3D Perspective) -->
+    <polygon points="390,88 440,105 430,410 390,408" fill="url(#rightGussetGrad)"/>
+    <!-- Right Gusset Inward Crease Line -->
+    <line x1="415" y1="98" x2="410" y2="410" stroke="#1A283B" stroke-width="2" opacity="0.8"/>
+    <!-- Right Outer Edge Highlight -->
+    <line x1="440" y1="105" x2="430" y2="410" stroke="#60A5FA" stroke-width="1.5" opacity="0.4"/>
+
+    <!-- 4. MAIN FRONT PANEL (Curved Tension Realistic Box Face) -->
+    <polygon points="210,88 390,88 390,408 210,408" fill="url(#frontFaceGrad)"/>
+
+    <!-- Front Surface Specular Highlights (Photorealistic Light Reflection) -->
+    <path d="M214 92 L285 90 L260 406 L214 406 Z" fill="url(#specularSheen)"/>
+    <path d="M365 92 L386 90 L386 406 L375 406 Z" fill="#FFFFFF" opacity="0.06"/>
+
+    <!-- Subtle Horizontal Curvature Shading -->
+    <line x1="210" y1="404" x2="390" y2="404" stroke="#000000" stroke-width="2.5" opacity="0.6"/>
+
+    <!-- 5. TOP SEAL & POCKET ZIPPER HEADER -->
+    <!-- Top Heat-Sealed Fin -->
+    <polygon points="190,62 410,62 390,88 210,88" fill="url(#topZipperGrad)"/>
+    <polygon points="185,55 415,55 410,62 190,62" fill="#9A3412"/>
+
+    <!-- Top Knurling / Heat Seal Teeth Pattern -->
+    <g stroke="#FED7AA" stroke-width="1.2" opacity="0.65">
+      <line x1="210" y1="68" x2="390" y2="68" stroke-dasharray="3 3"/>
+      <line x1="210" y1="72" x2="390" y2="72" stroke-dasharray="3 3"/>
+      <line x1="210" y1="76" x2="390" y2="76" stroke-dasharray="3 3"/>
+    </g>
+
+    <!-- Resealable Pocket Zipper Tear Strip & Pull Tab -->
+    <rect x="220" y="81" width="160" height="4" rx="2" fill="#7C2D12"/>
+    <rect x="220" y="82" width="160" height="2" rx="1" fill="#FDBA74" stroke-dasharray="4 2"/>
+    
+    <!-- Tear Notch Left and Right -->
+    <polygon points="194,78 202,81 194,84" fill="#0B1528"/>
+    <polygon points="406,78 398,81 406,84" fill="#0B1528"/>
+
+    <!-- 6. BRAND & TECHNICAL SPECIFICATIONS ARTWORK ON POUCH -->
+    <!-- Minimalist Premium B2B Brand Block -->
+    <g transform="translate(235, 128)">
+      <!-- Brand Seal Badge -->
+      <rect x="0" y="0" width="130" height="135" rx="8" fill="#152238" stroke="#38BDF8" stroke-width="1.5"/>
+      <circle cx="65" cy="40" r="22" fill="#0284C7" opacity="0.2"/>
+      <circle cx="65" cy="40" r="16" fill="url(#amberFoilGrad)"/>
+      <path d="M57 40 L63 46 L73 34" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Clean Typography Simulation -->
+      <rect x="20" y="74" width="90" height="9" rx="3" fill="#F8FAFC"/>
+      <rect x="28" y="90" width="74" height="6" rx="2" fill="#94A3B8"/>
+      
+      <!-- 5-Panel Indicator Badge -->
+      <rect x="18" y="106" width="94" height="16" rx="4" fill="#0B1528" stroke="#E06D28" stroke-width="1"/>
+      <text x="65" y="118" fill="#FDBA74" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700" text-anchor="middle" letter-spacing="0.08em">5-PANEL 3D STRUCTURE</text>
+    </g>
+
+    <!-- Pouch Lower Capacity & Barrier Markings -->
+    <g transform="translate(235, 290)">
+      <line x1="10" y1="0" x2="120" y2="0" stroke="#334155" stroke-width="1"/>
+      <circle cx="20" cy="18" r="6" fill="#38BDF8" opacity="0.2"/>
+      <circle cx="20" cy="18" r="2.5" fill="#38BDF8"/>
+      <rect x="34" y="15" width="76" height="6" rx="2" fill="#64748B"/>
+
+      <circle cx="20" cy="38" r="6" fill="#10B981" opacity="0.2"/>
+      <circle cx="20" cy="38" r="2.5" fill="#10B981"/>
+      <rect x="34" y="35" width="60" height="6" rx="2" fill="#64748B"/>
+      
+      <line x1="10" y1="58" x2="120" y2="58" stroke="#334155" stroke-width="1"/>
+    </g>
+
+    <!-- Corner Chamfer Seams (3D Box Pouch Weld Lines) -->
+    <line x1="210" y1="88" x2="210" y2="408" stroke="#38BDF8" stroke-width="1.2" opacity="0.4"/>
+    <line x1="390" y1="88" x2="390" y2="408" stroke="#38BDF8" stroke-width="1.2" opacity="0.4"/>
+  </g>
+
+  <!-- Technical Spec Callout Tag in Corner -->
+  <g transform="translate(36, 36)">
+    <rect width="138" height="42" rx="6" fill="#0B1528" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="20" cy="21" r="5" fill="#10B981"/>
+    <text x="34" y="18" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="11" font-weight="700">3D BOX POUCH</text>
+    <text x="34" y="31" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="9.5">Flat Bottom Format</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" fill="none">
+  <defs>
+    <linearGradient id="abGrad" x1="0" y1="0" x2="600" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#16243B"/>
+      <stop offset="100%" stop-color="#0B1528"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" rx="12" fill="url(#abGrad)"/>
+  
+  <!-- Facility & Multi-Roller Printing Concept Visual -->
+  <g stroke="#334155" stroke-width="1.5" opacity="0.8">
+    <!-- Cylinders -->
+    <circle cx="150" cy="180" r="50" fill="#1E293B" stroke="#0284C7" stroke-width="2"/>
+    <circle cx="280" cy="220" r="65" fill="#1E293B" stroke="#E06D28" stroke-width="2"/>
+    <circle cx="430" cy="180" r="50" fill="#1E293B" stroke="#0284C7" stroke-width="2"/>
+    <!-- Web/Film passing through rollers -->
+    <path d="M50 180 C150 180, 210 280, 280 280 C350 280, 430 180, 550 180" stroke="#F8FAFC" stroke-width="4" fill="none"/>
+  </g>
+
+  <!-- Technical Overlay Box -->
+  <g transform="translate(60, 360)">
+    <rect width="480" height="90" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+    <text x="30" y="38" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Precision Flexographic &amp; Rotogravure Compatibility</text>
+    <text x="30" y="64" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Engineered for strict web tension control &amp; high barrier lamination.</text>
+  </g>
+</svg>

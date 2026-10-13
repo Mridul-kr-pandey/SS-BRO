@@ -1,0 +1,7 @@
+# S.S. Brothers Packaging Robots Exclusion File
+# Production Domain: https://ssbrosco.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ssbrosco.com/sitemap.xml

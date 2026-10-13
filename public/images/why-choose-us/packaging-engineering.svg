@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" fill="none">
+  <defs>
+    <linearGradient id="whyGrad" x1="0" y1="0" x2="600" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F1A2D"/>
+      <stop offset="100%" stop-color="#070D18"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="520" rx="12" fill="url(#whyGrad)"/>
+
+  <!-- Layer Microstructure (Substrate, Barrier, Heat-Seal Layer) -->
+  <g transform="translate(70, 80)">
+    <!-- Layer 1: Outer Print Film -->
+    <path d="M50 40 L410 40 L370 90 L10 90 Z" fill="#0284C7" opacity="0.85"/>
+    <text x="430" y="70" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Print Substrate (PET / BOPP)</text>
+
+    <!-- Layer 2: Barrier Foil / Metalized Layer -->
+    <path d="M50 120 L410 120 L370 170 L10 170 Z" fill="#E06D28" opacity="0.85"/>
+    <text x="430" y="150" fill="#FB923C" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Barrier Layer (ALU / MET)</text>
+
+    <!-- Layer 3: Sealing Layer -->
+    <path d="M50 200 L410 200 L370 250 L10 250 Z" fill="#10B981" opacity="0.85"/>
+    <text x="430" y="230" fill="#34D399" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Sealant Layer (PE / CPP)</text>
+
+    <!-- Vertical Connector Lines showing lamination -->
+    <line x1="200" y1="90" x2="200" y2="120" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="2 2"/>
+    <line x1="200" y1="170" x2="200" y2="200" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="2 2"/>
+  </g>
+
+  <!-- Technical Spec Card -->
+  <g transform="translate(70, 360)">
+    <rect width="460" height="100" rx="8" fill="#16243B" stroke="#1E2E4A" stroke-width="1"/>
+    <circle cx="45" cy="50" r="20" fill="#E06D28" opacity="0.2"/>
+    <circle cx="45" cy="50" r="7" fill="#E06D28"/>
+    <text x="85" y="44" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Custom Multi-Layer Lamination</text>
+    <text x="85" y="68" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Tailored oxygen &amp; water vapor transmission rates (OTR/WVTR).</text>
+  </g>
+</svg>

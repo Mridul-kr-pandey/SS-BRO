@@ -1,0 +1,99 @@
+/* ==========================================================================
+   9. MANUFACTURING / PROCESS
+   ========================================================================== */
+.process-section {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Horizontal Connecting Line on Desktop */
+.process-timeline-line {
+  position: absolute;
+  top: 32px;
+  left: 60px;
+  right: 60px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--accent) 0%,
+    var(--accent-blue) 50%,
+    var(--accent) 100%
+  );
+  opacity: 0.35;
+  z-index: 1;
+}
+
+/* Individual Process Step */
+.process-step {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.process-step-node {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.process-step:hover .process-step-node {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(224, 109, 40, 0.2);
+}
+
+.process-step-number {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 10px;
+  letter-spacing: 0.05em;
+  transition: background-color var(--transition-fast);
+}
+
+.process-step:hover .process-step-number {
+  background-color: var(--accent);
+}
+
+.process-step-title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.process-step-desc {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  max-width: 220px;
+}

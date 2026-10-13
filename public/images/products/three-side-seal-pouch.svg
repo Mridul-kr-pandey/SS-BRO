@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <defs>
+    <linearGradient id="pgrad_three-side-seal" x1="80" y1="40" x2="320" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#0C4A6E"/>
+    </linearGradient>
+    <filter id="pShadow_three-side-seal" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#070D18" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  
+  <!-- Subtle Technical Background Card -->
+  <rect width="400" height="320" rx="8" fill="#F8FAFC"/>
+  <rect x="12" y="12" width="376" height="296" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Pouch Illustration by Type -->
+  
+    <!-- 3-Side Seal Pouch -->
+    <g filter="url(#pShadow_three-side-seal)">
+      <rect x="120" y="45" width="160" height="220" rx="2" fill="url(#pgrad_three-side-seal)"/>
+      <!-- Three Sealed Edges (Left, Right, Bottom) -->
+      <path d="M120 45 L135 45 L135 250 L265 250 L265 45 L280 45 L280 265 L120 265 Z" fill="#0284C7" opacity="0.9"/>
+      <!-- Tear Notch on side -->
+      <polygon points="120,70 126,73 120,76" fill="#FFFFFF"/>
+      <polygon points="280,70 274,73 280,76" fill="#FFFFFF"/>
+      <!-- Label Details -->
+      <rect x="150" y="90" width="100" height="110" rx="4" fill="#FFFFFF" opacity="0.95"/>
+      <rect x="165" y="115" width="70" height="8" rx="2" fill="#0C4A6E"/>
+      <rect x="165" y="135" width="50" height="4" rx="2" fill="#94A3B8"/>
+      <line x1="165" y1="155" x2="235" y2="155" stroke="#CBD5E1" stroke-width="2"/>
+    </g>
+  
+
+  <!-- Subtle Badge indicator in corner -->
+  <g transform="translate(24, 24)">
+    <circle cx="12" cy="12" r="10" fill="#0284C7" opacity="0.12"/>
+    <path d="M8 12L11 15L16 9" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
