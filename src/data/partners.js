@@ -1,7 +1,7 @@
 import { encodeImageSrc, homePlacement } from "./imageCatalog";
 
 /**
- * Confirmed Business Network Companies for SS BROSS CO.
+ * Confirmed Business Network Companies for SS BROS CO.
  * Listed neutrally as provided by the client.
  * Logo/brand artwork is attached only when a client image identifies that company.
  */

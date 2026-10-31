@@ -187,14 +187,14 @@ All 5 required network entities are declared in `src/data/partners.js` and rende
 All contact credentials have been preserved without modification:
 ```javascript
 export const COMPANY = {
-  name: "SS BROSS CO.",
+  name: "SS BROS CO.",
   tagline: "Flexible Packaging & Printing Solutions",
   phone: "+91 94793 80057",
   whatsapp: "+91 94793 80057",
   email: "ssbros1@gmail.com",
   address: "D-335, Sector 10, Noida, Uttar Pradesh",
   defaultWhatsAppMessage:
-    "Hello SS BROSS CO., I am interested in your flexible packaging solutions. I would like to know more about your products."
+    "Hello SS BROS CO., I am interested in your flexible packaging solutions. I would like to know more about your products."
 };
 ```
 
@@ -290,7 +290,7 @@ export const COMPANY = {
 5. [x] Add keyboard focus rings and reduced-motion CSS (completed).
 6. [x] Add `.gitignore`, `_redirects`, and fallback `404.html` (completed).
 7. [x] **Client Confirmations Completed:**
-   - Official trading name confirmed: **"SS BROSS CO."**.
+   - Official trading name confirmed: **"SS BROS CO."**.
    - Exact postal address confirmed: **"D-335, Sector 10, Noida, Uttar Pradesh"**.
    - Confirm phone number (`+91 94793 80057`) and email (`ssbros1@gmail.com`).
    - Confirm partner consent to list client names.
