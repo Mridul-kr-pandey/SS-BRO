@@ -180,6 +180,11 @@
     display: none;
   }
 
+  .brand-logo-img {
+    height: 44px;
+    max-width: 170px;
+  }
+
   .mobile-toggle {
     display: flex;
   }
@@ -359,6 +364,11 @@
 
   .brand-title {
     font-size: 1.0625rem;
+  }
+
+  .brand-logo-img {
+    height: 38px;
+    max-width: 145px;
   }
 
   .brand-subtitle {

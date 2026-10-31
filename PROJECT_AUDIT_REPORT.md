@@ -149,9 +149,9 @@ SS Bro/
 # PART 3 — S.S. BROTHERS BUSINESS REQUIREMENTS
 
 ### 1. Branding
-- **Logo Asset:** High-resolution transparent logo (`company-logo.png`, 1024×341, Format32bppArgb) is installed in `public/images/logo/` and `dist/images/logo/`.
-- **Navigation & Footer Rendering:** Logo renders inside `.brand-logo-img-wrap`, which applies a white protective background pill (`#ffffff`, border-radius 6px, subtle drop shadow). This ensures black and dark red letterforms in the logo remain readable against the dark navy (`#0B1528`) navbar and footer.
-- **Brand Consistency Consideration:** The logo graphic reads **"SS BROSS CO."** with an intertwined "SS" slash emblem, while the website text consistently uses **"S.S. Brothers"** and the contact email is **"ssbros1@gmail.com"**. Client should confirm whether "S.S. Brothers" or "SS Bross Co." is the official legal/market-facing entity name.
+- **Logo Asset:** High-resolution transparent logo (`company-logo.png`, 1024×342, Format32bppArgb) with exact text **"SS BROS CO."** is installed in `public/images/logo/` and preserved alongside original upload (`company-logo-original.png`).
+- **Navigation & Footer Rendering:** Logo renders inside `.brand-logo-img-wrap` directly on the navbar and footer without any artificial white card or box, maintaining balanced 48–56px height, responsive sizing, and preserving metallic 3D red and dark chrome lettering.
+- **Brand Consistency Consideration:** The logo graphic reads **"SS BROS CO."** with an intertwined "SS" slash emblem, aligned with the confirmed entity trading name **"SS BROS CO."**.
 - **Favicon:** The site now supports both `/favicon.png` (a 320x320 crisp emblem cropped from the official logo) and `/favicon.svg`.
 - **Typography & Colors:** Industrial palette implemented: primary navy (`#0B1528`), industrial accent orange (`#E06D28`), ocean blue (`#0284C7`), text dark (`#0F172A`), muted slate (`#64748B`), and Google Font `Plus Jakarta Sans`.
 
