@@ -60,7 +60,7 @@ export const QuoteModal = ({ onClose, selectedProduct }) => {
   };
 
   const buildMessage = () => {
-    let msg = `Hello S.S. Brothers, I am interested in your flexible packaging solutions.\n\n`;
+    let msg = `Hello ${COMPANY.name}, I am interested in your flexible packaging solutions.\n\n`;
     msg += `Packaging Type: ${formData.productType}\n`;
     msg += `Product to be Packed: ${formData.productName.trim()}\n`;
     if (formData.quantity.trim()) msg += `Estimated Quantity: ${formData.quantity.trim()}\n`;

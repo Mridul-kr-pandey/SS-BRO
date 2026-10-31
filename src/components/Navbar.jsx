@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
+import { COMPANY } from '../config/company';
 
 export const Navbar = ({ onOpenQuote }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -38,11 +39,11 @@ export const Navbar = ({ onOpenQuote }) => {
         <div className="container">
           <div className="navbar-inner">
             {/* Logo */}
-            <a href="#home" className="brand-logo" aria-label="S.S. Brothers Home">
+            <a href="#home" className="brand-logo" aria-label={`${COMPANY.name} Home`}>
               <div className="brand-logo-img-wrap">
                 <img
                   src="/images/logo/company-logo.png"
-                  alt="S.S. Brothers – Flexible Packaging Solutions"
+                  alt={`${COMPANY.name} – Flexible Packaging Solutions`}
                   className="brand-logo-img"
                 />
               </div>
@@ -97,7 +98,7 @@ export const Navbar = ({ onOpenQuote }) => {
               <div className="brand-logo-img-wrap">
                 <img
                   src="/images/logo/company-logo.png"
-                  alt="S.S. Brothers"
+                  alt={COMPANY.name}
                   className="brand-logo-img"
                 />
               </div>

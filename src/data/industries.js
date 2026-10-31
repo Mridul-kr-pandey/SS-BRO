@@ -1,7 +1,7 @@
 import { encodeImageSrc, homePlacement } from "./imageCatalog";
 
 /**
- * Confirmed Industries Data for S.S. Brothers
+ * Confirmed Industries Data for SS BROSS CO.
  * Client photos used only where visual evidence supports the category.
  */
 export const industries = [

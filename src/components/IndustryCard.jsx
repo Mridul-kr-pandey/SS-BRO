@@ -1,4 +1,5 @@
 import React from 'react';
+import { COMPANY } from '../config/company';
 
 export const IndustryCard = ({ industry }) => {
   const applications = industry.applications || [];
@@ -7,7 +8,7 @@ export const IndustryCard = ({ industry }) => {
     <article className="industry-card">
       <img
         src={industry.image}
-        alt={`S.S. Brothers Packaging for ${industry.name} Industry`}
+        alt={`${COMPANY.name} Packaging for ${industry.name} Industry`}
         className="industry-card-bg"
         width="600"
         height="420"

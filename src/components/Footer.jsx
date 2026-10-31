@@ -41,11 +41,11 @@ export const Footer = ({ onOpenQuote }) => {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <a href="#home" className="footer-logo" aria-label="S.S. Brothers">
+            <a href="#home" className="footer-logo" aria-label={COMPANY.name}>
               <div className="brand-logo-img-wrap brand-logo-img-wrap--footer">
                 <img
                   src="/images/logo/company-logo.png"
-                  alt="S.S. Brothers"
+                  alt={COMPANY.name}
                   className="brand-logo-img"
                 />
               </div>
@@ -170,7 +170,7 @@ export const Footer = ({ onOpenQuote }) => {
 
         <div className="footer-bottom">
           <p className="footer-copy">
-            &copy; {new Date().getFullYear()} S.S. Brothers. All rights reserved.
+            &copy; {new Date().getFullYear()} {COMPANY.name}. All rights reserved.
           </p>
           <nav className="footer-meta-links" aria-label="Footer meta navigation">
             <a href="#about">About</a>

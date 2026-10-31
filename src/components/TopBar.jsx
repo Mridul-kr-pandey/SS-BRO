@@ -24,7 +24,7 @@ export const TopBar = ({ onOpenQuote }) => {
 
           <div className="top-bar-actions">
             {phoneConfigured ? (
-              <a href={getPhoneUrl()} className="top-bar-link" aria-label="Call S.S. Brothers">
+              <a href={getPhoneUrl()} className="top-bar-link" aria-label={`Call ${COMPANY.name}`}>
                 <Phone size={13} />
                 <span>{COMPANY.phone}</span>
               </a>
@@ -47,7 +47,7 @@ export const TopBar = ({ onOpenQuote }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="top-bar-link"
-              aria-label="WhatsApp S.S. Brothers"
+              aria-label={`WhatsApp ${COMPANY.name}`}
             >
               <MessageCircle size={13} />
               <span>WhatsApp Us</span>
@@ -56,7 +56,7 @@ export const TopBar = ({ onOpenQuote }) => {
             {emailConfigured ? (
               <>
                 <span className="top-bar-divider" aria-hidden="true"></span>
-                <a href={getEmailUrl()} className="top-bar-link" aria-label="Email S.S. Brothers">
+                <a href={getEmailUrl()} className="top-bar-link" aria-label={`Email ${COMPANY.name}`}>
                   <Mail size={13} />
                   <span>{COMPANY.email}</span>
                 </a>

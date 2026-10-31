@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Check } from 'lucide-react';
+import { COMPANY } from '../config/company';
 
 export const ProductCard = ({ product, onSelect }) => {
   return (
@@ -7,7 +8,7 @@ export const ProductCard = ({ product, onSelect }) => {
       <div className="product-card-image-wrap">
         <img
           src={product.image}
-          alt={`S.S. Brothers ${product.name} Flexible Packaging`}
+          alt={`${COMPANY.name} ${product.name} Flexible Packaging`}
           className="product-card-img"
           width="400"
           height="320"

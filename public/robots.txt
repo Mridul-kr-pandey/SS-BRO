@@ -1,4 +1,4 @@
-# S.S. Brothers Packaging Robots Exclusion File
+# SS BROSS CO. Packaging Robots Exclusion File
 # Production Domain: https://ssbrosco.com
 
 User-agent: *

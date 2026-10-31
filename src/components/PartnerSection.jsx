@@ -1,6 +1,7 @@
 import React from 'react';
 import { Globe } from 'lucide-react';
 import { partners } from '../data/partners';
+import { COMPANY } from '../config/company';
 
 export const PartnerSection = () => {
   return (
@@ -40,7 +41,7 @@ export const PartnerSection = () => {
         </div>
 
         <p className="partner-trust-note">
-          The above are companies that S.S. Brothers has conducted business with.
+          The above are companies that {COMPANY.name} has conducted business with.
           These are listed for informational context only and do not imply formal strategic partnerships.
         </p>
       </div>

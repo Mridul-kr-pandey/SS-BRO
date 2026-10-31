@@ -1,6 +1,6 @@
 import React from 'react';
 import { MessageCircle, ArrowRight } from 'lucide-react';
-import { getWhatsAppUrl } from '../config/company';
+import { getWhatsAppUrl, COMPANY } from '../config/company';
 
 export const CTASection = ({ onOpenQuote }) => {
   return (
@@ -37,7 +37,7 @@ export const CTASection = ({ onOpenQuote }) => {
               type="button"
               onClick={onOpenQuote}
               className="btn btn-secondary"
-              aria-label="Request a packaging quote from S.S. Brothers"
+              aria-label={`Request a packaging quote from ${COMPANY.name}`}
             >
               <span>Request a Quote</span>
               <ArrowRight size={16} />

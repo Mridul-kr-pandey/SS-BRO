@@ -37,14 +37,14 @@ export const AboutPreview = () => {
           </div>
 
           <div className="about-content">
-            <span className="eyebrow">About S.S. Brothers</span>
+            <span className="eyebrow">About SS BROSS CO.</span>
 
             <h2 className="about-heading">
               Flexible Packaging Solutions Built Around Your Product
             </h2>
 
             <p className="about-p-primary">
-              S.S. Brothers provides flexible packaging and printing solutions for
+              SS BROSS CO. provides flexible packaging and printing solutions for
               businesses looking for practical, customized and visually effective packaging
               formats.
             </p>

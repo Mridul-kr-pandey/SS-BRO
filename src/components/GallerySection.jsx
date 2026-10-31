@@ -1,5 +1,6 @@
 import React from 'react';
 import { encodeImageSrc, homePlacement } from '../data/imageCatalog';
+import { COMPANY } from '../config/company';
 
 export const GallerySection = () => {
   return (
@@ -19,7 +20,7 @@ export const GallerySection = () => {
             <div key={item.image} className={`gallery-item gallery-item-${index + 1}`}>
               <img
                 src={encodeImageSrc(item.image)}
-                alt={`S.S. Brothers ${item.title}`}
+                alt={`${COMPANY.name} ${item.title}`}
                 className="gallery-img"
                 width="600"
                 height="450"

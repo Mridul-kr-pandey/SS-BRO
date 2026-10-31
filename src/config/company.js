@@ -4,14 +4,14 @@
  * Empty values display clean placeholders and fall back to the quote / contact flow.
  */
 export const COMPANY = {
-  name: "S.S. Brothers",
+  name: "SS BROSS CO.",
   tagline: "Flexible Packaging & Printing Solutions",
   phone: "+91 94793 80057",
   whatsapp: "+91 94793 80057",
   email: "ssbros1@gmail.com",
-  address: "Sector 10, Noida, Uttar Pradesh",
+  address: "D-335, Sector 10, Noida, Uttar Pradesh",
   defaultWhatsAppMessage:
-    "Hello S.S. Brothers, I am interested in your flexible packaging solutions. I would like to know more about your products."
+    "Hello SS BROSS CO., I am interested in your flexible packaging solutions. I would like to know more about your products."
 };
 
 export const hasPhone = () => Boolean(COMPANY.phone && COMPANY.phone.trim());

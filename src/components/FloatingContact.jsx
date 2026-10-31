@@ -20,7 +20,7 @@ export const FloatingContact = ({ onOpenQuote }) => {
         target="_blank"
         rel="noopener noreferrer"
         className="floating-whatsapp-desktop"
-        aria-label="Chat with S.S. Brothers on WhatsApp"
+        aria-label={`Chat with ${COMPANY.name} on WhatsApp`}
       >
         <MessageCircle size={20} />
         <span>WhatsApp Us</span>
@@ -33,7 +33,7 @@ export const FloatingContact = ({ onOpenQuote }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="mobile-bar-btn mobile-bar-btn-wa"
-            aria-label="WhatsApp S.S. Brothers"
+            aria-label={`WhatsApp ${COMPANY.name}`}
           >
             <MessageCircle size={16} />
             <span>WhatsApp</span>
