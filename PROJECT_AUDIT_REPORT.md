@@ -191,7 +191,7 @@ export const COMPANY = {
   tagline: "Flexible Packaging & Printing Solutions",
   phone: "+91 94793 80057",
   whatsapp: "+91 94793 80057",
-  email: "ssbros1@gmail.com",
+  email: "ssbrosco1@gmail.com",
   address: "D-335, Sector 10, Noida, Uttar Pradesh",
   defaultWhatsAppMessage:
     "Hello SS BROS CO., I am interested in your flexible packaging solutions. I would like to know more about your products."
@@ -211,7 +211,7 @@ export const COMPANY = {
 
 ### 4. Email Integration
 - **URL Construction:** Handled by `getEmailUrl()`.
-- **Implementation:** Produces `mailto:ssbros1@gmail.com?subject=...`.
+- **Implementation:** Produces `mailto:ssbrosco1@gmail.com?subject=...`.
 - **Verification:** **VERIFIED WORKING**.
 
 ### 5. Quote Request Form (`QuoteModal.jsx`)
@@ -292,7 +292,7 @@ export const COMPANY = {
 7. [x] **Client Confirmations Completed:**
    - Official trading name confirmed: **"SS BROS CO."**.
    - Exact postal address confirmed: **"D-335, Sector 10, Noida, Uttar Pradesh"**.
-   - Confirm phone number (`+91 94793 80057`) and email (`ssbros1@gmail.com`).
+   - Confirm phone number (`+91 94793 80057`) and email (`ssbrosco1@gmail.com`).
    - Confirm partner consent to list client names.
 8. [ ] **Deployment Action (When Authorized):**
    - Push repository to GitHub/GitLab.

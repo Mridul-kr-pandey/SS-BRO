@@ -8,7 +8,7 @@ export const COMPANY = {
   tagline: "Flexible Packaging & Printing Solutions",
   phone: "+91 94793 80057",
   whatsapp: "+91 94793 80057",
-  email: "ssbros1@gmail.com",
+  email: "ssbrosco1@gmail.com",
   address: "D-335, Sector 10, Noida, Uttar Pradesh",
   defaultWhatsAppMessage:
     "Hello SS BROS CO., I am interested in your flexible packaging solutions. I would like to know more about your products."
