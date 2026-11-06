@@ -1,7 +1,7 @@
 import { encodeImageSrc, homePlacement } from "./imageCatalog";
 
 /**
- * Confirmed Pouch Products Data for SS BROS CO.
+ * Confirmed Pouch Products Data for SS BROS CO
  * Images come from homePlacement; SVG placeholders remain where
  * pouch construction cannot be confirmed from client photographs.
  */

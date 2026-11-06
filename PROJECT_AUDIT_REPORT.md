@@ -187,7 +187,7 @@ All 5 required network entities are declared in `src/data/partners.js` and rende
 All contact credentials have been preserved without modification:
 ```javascript
 export const COMPANY = {
-  name: "SS BROS CO.",
+  name: "SS BROS CO",
   tagline: "Flexible Packaging & Printing Solutions",
   phone: "+91 94793 80057",
   whatsapp: "+91 94793 80057",

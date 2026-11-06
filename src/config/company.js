@@ -4,7 +4,7 @@
  * Empty values display clean placeholders and fall back to the quote / contact flow.
  */
 export const COMPANY = {
-  name: "SS BROS CO.",
+  name: "SS BROS CO",
   tagline: "Flexible Packaging & Printing Solutions",
   phone: "+91 94793 80057",
   whatsapp: "+91 94793 80057",
