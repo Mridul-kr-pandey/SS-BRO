@@ -194,7 +194,7 @@ export const COMPANY = {
   email: "ssbrosco1@gmail.com",
   address: "D-335, Sector 10, Noida, Uttar Pradesh",
   defaultWhatsAppMessage:
-    "Hello SS BROS CO., I am interested in your flexible packaging solutions. I would like to know more about your products."
+    "Hello SS BROS CO, I am interested in your flexible packaging solutions. I would like to know more about your products."
 };
 ```
 
